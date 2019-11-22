@@ -20,6 +20,8 @@ ZSH_THEME="beartrap"
 
 export ZSH=/Users/mwitherow/.oh-my-zsh
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+PATH=$PATH:/usr/local/bin/gantry
+PATH=$PATH:/usr/local/Cellar/mtr/0.93_1/sbin/mtr
 source $ZSH/oh-my-zsh.sh
 
 # Edit settings
@@ -56,6 +58,3 @@ alias tmd="tmux detach"
 # Find & Replace All Instances 
 alias frall="find $1 -type f -print0 | xargs -0 sed -i '' 's/$2/$3/g'"
 alias ll='ls -la'
-
-# MTR
-alias mtr='sudo /usr/local/Cellar/mtr/0.86/sbin/mtr $1'
