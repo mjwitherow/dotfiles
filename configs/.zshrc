@@ -18,7 +18,7 @@ plugins=(git)
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="beartrap"
 
-export ZSH=/Users/mattbook/.oh-my-zsh
+export ZSH=/Users/mwitherow/.oh-my-zsh
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 source $ZSH/oh-my-zsh.sh
 
@@ -47,6 +47,7 @@ alias tma="tmux attach-session -t $1"
 alias tmn="tmux new -s $1"
 alias tml="tmux ls"
 alias tmk="tmux kill-session -t $1"
+alias tmd="tmux detach"
 
 # Shell into DCs quickly
 # alias dc='ssh matt.witherow@org.com'
